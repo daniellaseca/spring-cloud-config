@@ -1,7 +1,7 @@
 configuration:  
   projectName: service-registration
 server:
-  port: 8000
+  port: 1111
   
 eureka:
  instance:
@@ -12,9 +12,6 @@ eureka:
     serviceUrl:
      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
  
-
-server:
-  port: 1111   # HTTP (Tomcat) port
 
 # Discovery Server Dashboard uses FreeMarker.  Don't want Thymeleaf templates
 spring:
