@@ -1,2 +1,7 @@
+configuration:
+  projectName: location
+  service2:
+    host: service-2
+    port: 3333
 server:
-  port: 3333   # HTTP (Tomcat) port
+  port: 4444
