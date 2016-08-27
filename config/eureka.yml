@@ -1,9 +1,9 @@
 server:
   port: 1111
-#eureka:
-#  client:
-#    register-with-eureka: false
-#    fetch-registry: false
 eureka:
-  instance:
-    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+ instance:
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
