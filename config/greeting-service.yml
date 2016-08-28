@@ -1,0 +1,14 @@
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+
+---
+spring:
+  profiles: development
+server:
+  port: 9000
+
+
+
